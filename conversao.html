@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Excel para SQL</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="title">Conversor de Excel para SQL</h1>
+  <input type="file" id="excelFile" accept=".xlsx, .xls">
+  <button id="convertButton">Conversor de Excel para SQL</button>
+  <div id="output"><p>EX:</p> UPDATE produto SET pro_saldo = 62626 WHERE pro_cod = '26262';
+    COMMIT WORK;</div>
+  <button id="copyButton">Copiar</button>
+  <button id="saveButton">Salvar</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+  <script src="script.js"></script>
+  <p class="footer">Create by GL - V-1.0.1</p>
+
+</body>
+</html>
